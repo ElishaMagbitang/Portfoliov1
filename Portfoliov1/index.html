@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Portfolio</title>
+  <meta name="description" content="Clean, black-and-white portfolio dashboard with tabs for Profile, Projects, Experiences, and Skills." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Portfolio navigation">
+      <div class="brand">
+        <div class="identity">
+          <h1 class="name" title="Your Name">Elisha Jhoyce Magbitang</h1>
+        </div>
+      </div>
+
+      <nav class="nav" role="tablist" aria-label="Dashboard tabs">
+        <button class="tab is-active" role="tab" aria-selected="true" aria-controls="tab-profile" id="tab-btn-profile" data-target="profile">
+          <span>Profile</span>
+        </button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="tab-projects" id="tab-btn-projects" data-target="projects">
+          <span>Projects</span>
+        </button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="tab-experiences" id="tab-btn-experiences" data-target="experiences">
+          <span>Experiences</span>
+        </button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="tab-skills" id="tab-btn-skills" data-target="leadership">
+          <span>Leadership</span>
+        </button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="tab-skills" id="tab-btn-skills" data-target="skills">
+          <span>Skills</span>
+        </button>
+      </nav>
+
+      <div class="sidebar-actions">
+        <a class="btn" href="#" onclick="window.print(); return false;">Print / Save as PDF</a>
+        <a class="btn outline" href="./README.txt" download>How to Edit</a>
+      </div>
+
+      <footer class="sidebar-footer">
+        <p>© <span id="year"></span>Elisha Jhoyce Magbitang</p>
+      </footer>
+    </aside>
+
+    <main id="main" class="content">
+      <!-- Profile -->
+      <section id="tab-profile" class="panel is-active" role="tabpanel" aria-labelledby="tab-btn-profile">
+        <header class="panel-header" style="text-align:center;">
+          <img src="elishajhoyce.jpg" alt="Elisha Jhoyce Magbitang" class="profile-picture">
+          <h2>Elisha Jhoyce Magbitang</h2>
+          <p class="tagline">UI/UX Designer · Frontend Developer · Project Manager</p>
+        </header>
+        <div class="grid one">
+          <div class="card">
+            <h3>Summary</h3>
+            <p>
+              Motivated Computer Science undergraduate with experience in project management, UI/UX design, frontend development, and customer service. 
+              Skilled in Figma, Canva, HTML/CSS, and Laravel, with applied work on web systems and health apps. 
+              Proficient in C, Java, Python, and C#, with hands-on use of tools like Brackets and Microsoft Office. 
+              Strong communicator and team player, with leadership in student organizations, academic excellence, and a solid work ethic. 
+              Seeking opportunities to apply technical, managerial, and interpersonal strengths in growth-oriented environments.
+            </p>
+          </div>
+          <div class="card">
+            <ul class="meta">
+              <li><strong>Location:</strong> Cabangaan, Silang, Cavite</li>
+              <li><strong>Email:</strong> magbitangelishajhoyce@gmail.com</li>
+              <li><strong>Website:</strong> www.linkedin.com/in/elisha-jhoyce-magbitang-984613243</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Highlights</h3>
+            <ul class="bullets">
+              <li>UI/UX Design, Frontend Developer, AI Automation, Project Manager</li>
+              <li>Expert in Figma, HTML, CSS, JavaScript</li>
+              <li>Strong focus on accessibility (a11y)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="education">
+          <div class="education-item">
+            <div class="education-content">
+              <div class="education-header">
+                <h3>Bachelor of Science in Computer Science</h3>
+                <span class="year">2021 - 2025</span>
+              </div>
+              <p>Polytechnic University of the Philippines</p>
+              <p>Cum Laude</p>
+            </div>
+          </div>
+
+          <div class="education-item">
+            <div class="education-content">
+              <div class="education-header">
+                <h3>Senior High School (STEM Strand)</h3>
+                <span class="year">2019 - 2021</span>
+              </div>
+              <p>Tagaytay City Science National High School - Integrated Senior High School</p>
+              <p>High Honor</p>
+            </div>
+          </div>
+
+          <div class="education-item">
+            <div class="education-content">
+              <div class="education-header">
+                <h3>Junior High School</h3>
+                <span class="year">2015 - 2019</span>
+              </div>
+              <p>Tagaytay City Science National High School - Integrated Senior High School</p>
+              <p>Honor</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Projects -->
+      <section id="tab-projects" class="panel" role="tabpanel" aria-labelledby="tab-btn-projects">
+        <header class="panel-header">
+          <h2>Projects</h2>
+          <p class="muted">Selected work demonstrating craft and impact.</p>
+        </header>
+
+        <div class="grid">
+          <article class="card project project-n8n">
+            <header class="project-head">
+              <h3>Daily Task Reminder Workflow using n8n</h3>
+              <span class="badge">AI Automation</span>
+            </header>
+            <p>
+              Designed and implemented an automated task reminder workflow in n8n, integrating Google Sheets and Gmail to deliver daily task summaries via email. Automated data retrieval, formatting, and notification delivery, reducing manual tracking and improving personal productivity.
+            </p>
+            <ul class="tags">
+              <li>n8n</li><li>Google Sheets</li>
+            </ul>
+          </article>
+
+          <article class="card project project-clickfall">
+            <header class="project-head">
+              <h3>ClickFall: Pop & Score</h3>
+              <span class="badge">Developer</span>
+            </header>
+            <p>
+              Developed a browser-based reflex and accuracy game using HTML, CSS, and JavaScript. Implemented scoring, accuracy tracking, and a dynamic Game Over screen with restart functionality. Designed responsive UI elements and interaction flow for an engaging player experience. Optimized game logic for smooth key detection and real-time performance in web browsers.
+            </p>
+            <ul class="tags">
+              <li>Canva</li><li>HTML</li><li>CSS</li><li>JavaScript</li>
+            </ul>
+          </article>
+
+          <article class="card project project-python">
+            <header class="project-head">
+              <h3>Mini Games using Python</h3>
+              <span class="badge">Developer</span>
+            </header>
+            <p>
+              Built a collection of Python-based games including Card Match, Guessing Game, Quiz, Snake, and Tic-Tac-Toe.	Designed and implemented a simple dashboard system to navigate and launch individual games. Applied modular coding practices, making it easy to expand and maintain multiple game files.	Utilized Python and Pygame to create interactive gameplay experiences.
+            </p>
+            <ul class="tags">
+              <li>Python</li>
+            </ul>
+          </article>
+
+          <article class="card project project-healthapp">
+            <header class="project-head">
+              <h3>Health App</h3>
+              <span class="badge">UI/UX Design</span>
+            </header>
+            <p>
+              Developed the frontend design at Lamina Studios, LLC where I completed my On-The-Job (OJT) last August to October 2024. Communicated design ideas effectively with a cross-functional team, improving collaboration and confidence in expressing feedback.
+            </p>
+            <ul class="tags">
+              <li>Figma</li><li>Canva</li><li>HTML</li><li>CSS</li><li>JavaScript</li>
+            </ul>
+          </article>
+
+          <article class="card project project-pos">
+            <header class="project-head">
+              <h3>Point of Sale (POS)</h3>
+              <span class="badge">UI/UX Design</span>
+            </header>
+            <p>
+              Designed to help cafés reduce errors and streamline operations. Collaborated closely with peers to understand user pain points and business needs, which improved my ability to actively listen, give constructive feedback, and communicate ideas clearly during group discussions.
+            </p>
+            <ul class="tags">
+              <li>Figma</li><li>Canva</li><li>HTML</li><li>CSS</li><li>JavaScript</li>
+            </ul>
+          </article>
+
+          <article class="card project project-tracker">
+            <header class="project-head">
+              <h3>Health Tracker</h3>
+              <span class="badge">UI/UX Design</span>
+            </header>
+            <p>
+              Developed a health tracker for users to monitor their health using WPF in C# and Figma for UI/UX design. Participated in team discussions and client simulations, enhancing my ability to explain technical concepts clearly.
+            </p>
+            <ul class="tags">
+              <li>Figma</li><li>Canva</li><li>HTML</li><li>CSS</li><li>JavaScript</li>
+            </ul>
+          </article>
+
+          <article class="card project project-maverick">
+            <header class="project-head">
+              <h3>Maverick Fragrance</h3>
+              <span class="badge">Developer</span>
+            </header>
+            <p>
+              A web-based app offering eco-conscious customers high-quality, natural scents with a focus on affordability, customer satisfaction, and environmental responsibility. Includes dashboards for Contacts, FAQs, About, Products, and Profile.
+            </p>
+            <ul class="tags">
+              <li>Figma</li><li>Canva</li><li>C#</li>
+            </ul>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Experiences -->
+      <section id="tab-experiences" class="panel" role="tabpanel" aria-labelledby="tab-btn-experiences">
+        <header class="panel-header">
+          <h2>Experiences</h2>
+          <p class="muted">Roles that shaped my craft.</p>
+        </header>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="dot" aria-hidden="true"></div>
+            <div class="content">
+              <h3>UI/UX Designer & Frontend Developer — Lamina Studios, LLC</h3>
+              <span class="when">Aug 2024 – Oct 2024</span>
+              <p>
+                Worked with design tools like Figma and Miro to create layouts and brainstorm ideas. Learned the fundamentals of color theory, typography, and layout grids. Applied design concepts to real-world projects, improving aesthetics and usability.
+              </p>
+              <ul class="tags">
+              <li>UI/UX design</li><li>Creativity</li><li>Collaboration</li><li>Attention to detail</li><li>Design thinking</li>
+            </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="dot" aria-hidden="true"></div>
+            <div class="content">
+              <h3>Municipal Planning and Development Coordinator</h3>
+              <span class="when"> March 2023 – September 2023</span>
+              <p>
+                Collected and encoded accurate resident data from various households. Maintained confidentiality and provided respectful, professional interaction with local residents. Demonstrated strong communication, patience, and data handling skills.
+              </p>
+              <ul class="tags"> 
+              <li>Data collection</li><li>Communication</li><li>Confidentiality</li><li>Patience</li><li>Accuracy</li>
+              <ul class="tags"></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Leadership Experience -->
+      <section id="tab-leadership" class="panel" role="tabpanel" aria-labelledby="tab-btn-projects">
+        <header class="panel-header">
+          <h2>Projects</h2>
+          <p class="muted">Leadership</p>
+        </header>
+
+        <div class="grid">
+          <article class="card project">
+            <header class="project-head">
+              <h3>Class Secretary</h3>
+              <span class="badge">Polytechnic University of the Philippines</span>
+            </header>
+            <p>
+              Managed and documented class meetings, attendance, and academic records with accuracy and confidentiality. Facilitated communication between professors and classmates, enhancing coordination and class productivity. Demonstrated accountability and organization in handling academic concerns and student information.
+            </p>
+            <ul class="tags">
+              <li>2022-2024</li><li>Leadership</li><li>Organization</li><li>Attention to detail</li><li>Time Management</li><li>Communication</li><li>Reliability</li><li>Information handling.</li>
+            </ul>
+          </article>
+
+          <article class="card project">
+            <header class="project-head">
+              <h3>Class Vice President</h3>
+              <span class="badge">Polytechnic University of the Philippines</span>
+            </header>
+            <p>
+              Assisted the Class President in overseeing class operations and acted as representative when needed. Initiated and supported student-led projects and activities to promote engagement and collaboration. Fostered a positive class environment through active listening, conflict resolution, and team support.
+            </p>
+            <ul class="tags">
+              <li>202-2024</li><li>Leadership</li><li>Organization</li><li>Attention to detail</li><li>Time Management</li><li>Communication</li><li>Reliability</li><li>Information handling.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="tab-skills" class="panel" role="tabpanel" aria-labelledby="tab-btn-skills">
+        <header class="panel-header">
+          <h2>Skills</h2>
+          <p class="muted">Core tools and strengths.</p>
+        </header>
+
+        <div class="grid two">
+          <div class="card skills-design">
+            <h3>Design</h3>
+            <ul class="bullets">
+              <li>Figma, Canva</li>
+              <li>Wireframing & Prototyping</li>
+              <li>Design Systems & Style Guides</li>
+              <li>Usability Testing</li>
+            </ul>
+          </div>
+          <div class="card skills-dev">
+            <h3>Development</h3>
+            <ul class="bullets">
+              <li>HTML, CSS, JavaScript</li>
+              <li>Responsive Layouts</li>
+              <li>Accessibility (WCAG)</li>
+              <li>Version Control (Git)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
