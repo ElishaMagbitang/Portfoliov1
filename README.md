@@ -1,6 +1,6 @@
 # Portfoliov1
 
-Black & White Portfolio (HTML/CSS/JS)
+Portfolio (HTML/CSS/JS)
 ====================================
 
 How to use
