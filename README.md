@@ -27,3 +27,7 @@ Notes
 - Accessible tab list with keyboard navigation (Home/End/Left/Right).
 
 Enjoy! ✨
+
+Preview Image
+-----
+![Alt text](elishajhoyce.jpg)
