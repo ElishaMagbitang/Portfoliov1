@@ -30,4 +30,4 @@ Enjoy! ✨
 
 Preview Image
 -----
-![Preview Image](./portfolio.jpg)
+![Preview Image](./portfolio.png)
