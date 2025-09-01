@@ -30,4 +30,4 @@ Enjoy! ✨
 
 Preview Image
 -----
-![Preview Image](elishajhoyce.jpg)
+![Preview Image](./elishajhoyce.jpg)
