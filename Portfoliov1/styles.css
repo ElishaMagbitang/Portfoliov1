@@ -483,3 +483,46 @@ body.dark .card {
   color: white;
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* pushes footer down */
+  padding: 1rem;
+  position: relative;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem; /* spacing between tags */
+  margin-bottom: 1.5rem; /* add space before the GitHub button */
+}
+
+.project-actions {
+  display: flex;
+  justify-content: flex-end; /* pushes button to the right */
+}
+
+.github-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem; /* space between icon and text */
+  background: #24292f;
+  color: #fff;
+  padding: 0.4rem 0.75rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: background 0.2s ease;
+}
+
+.github-btn:hover {
+  background: #333;
+}
+
+.badge.highlight {
+  background: var(--primary);
+  color: #fff;
+  font-weight: 600;
+}
+

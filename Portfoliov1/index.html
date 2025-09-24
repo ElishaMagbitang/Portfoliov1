@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>My Portfolio</title>
-  <meta name="description" content="Clean, black-and-white portfolio dashboard with tabs for Profile, Projects, Experiences, and Skills." />
+  <meta name="description" content="Clean, black-and-white portfolio dashboard with tabs for Profile, Projects, Experiences, Leadership, and Skills." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -13,6 +13,7 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <div class="app-shell">
+    <!-- Sidebar -->
     <aside class="sidebar" aria-label="Portfolio navigation">
       <div class="brand">
         <div class="identity">
@@ -30,24 +31,29 @@
         <button class="tab" role="tab" aria-selected="false" aria-controls="tab-experiences" id="tab-btn-experiences" data-target="experiences">
           <span>Experiences</span>
         </button>
-        <button class="tab" role="tab" aria-selected="false" aria-controls="tab-skills" id="tab-btn-skills" data-target="leadership">
+        <button class="tab" role="tab" aria-selected="false" aria-controls="tab-leadership" id="tab-btn-leadership" data-target="leadership">
           <span>Leadership</span>
         </button>
         <button class="tab" role="tab" aria-selected="false" aria-controls="tab-skills" id="tab-btn-skills" data-target="skills">
           <span>Skills</span>
         </button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="tab-education" id="tab-btn-education" data-target="education">
+          <span>Education</span>
+        </button>
       </nav>
 
+
       <div class="sidebar-actions">
-        <a class="btn" href="#" onclick="window.print(); return false;">Print / Save as PDF</a>
+        <a class="btn" href="./resume.pdf" download="resume.pdf">Download CV</a>
         <a class="btn outline" href="./README.txt" download>How to Edit</a>
       </div>
 
       <footer class="sidebar-footer">
-        <p>© <span id="year"></span>Elisha Jhoyce Magbitang</p>
+        <p>© <span id="year"></span> Elisha Jhoyce Magbitang</p>
       </footer>
     </aside>
 
+    <!-- Main Content -->
     <main id="main" class="content">
       <!-- Profile -->
       <section id="tab-profile" class="panel is-active" role="tabpanel" aria-labelledby="tab-btn-profile">
@@ -56,6 +62,7 @@
           <h2>Elisha Jhoyce Magbitang</h2>
           <p class="tagline">UI/UX Designer · Frontend Developer · Project Manager</p>
         </header>
+
         <div class="grid one">
           <div class="card">
             <h3>Summary</h3>
@@ -71,54 +78,196 @@
             <ul class="meta">
               <li><strong>Location:</strong> Cabangaan, Silang, Cavite</li>
               <li><strong>Email:</strong> magbitangelishajhoyce@gmail.com</li>
-              <li><strong>Website:</strong> www.linkedin.com/in/elisha-jhoyce-magbitang-984613243</li>
+              <li><strong>Website:</strong> <a href="https://www.linkedin.com/in/elisha-jhoyce-magbitang-984613243" target="_blank">LinkedIn</a></li>
             </ul>
           </div>
           <div class="card">
             <h3>Highlights</h3>
             <ul class="bullets">
-              <li>UI/UX Design, Frontend Developer, AI Automation, Project Manager</li>
+              <li>UI/UX Design, Frontend Development, AI Automation, Project Management</li>
               <li>Expert in Figma, HTML, CSS, JavaScript</li>
-              <li>Strong focus on accessibility (a11y)</li>
+              <li>Strong focus on accessibility</li>
             </ul>
           </div>
         </div>
-        <div class="education">
-          <div class="education-item">
-            <div class="education-content">
-              <div class="education-header">
-                <h3>Bachelor of Science in Computer Science</h3>
-                <span class="year">2021 - 2025</span>
-              </div>
-              <p>Polytechnic University of the Philippines</p>
-              <p>Cum Laude</p>
+      </section>
+
+      <!-- Education -->
+      <section id="tab-education" class="panel" role="tabpanel" aria-labelledby="tab-btn-education">
+        <header class="panel-header">
+          <h2>Education</h2>
+          <p class="muted">Academic background that built my foundation.</p>
+        </header>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="dot" aria-hidden="true"></div>
+            <div class="content">
+              <h3>Bachelor of Science in Computer Science</h3>
+              <span class="when">2021 – 2025</span>
+              <span class="badge">Polytechnic University of the Philippines</span>
+              <span class="badge highlight">Cum Laude</span>
+              <p>
+                Graduated with honors in Computer Science. Gained extensive experience in UI/UX, 
+                system design, and web development through academic projects and internships. 
+                Strengthened problem-solving, collaboration, and leadership skills.
+              </p>
+              <ul class="tags">
+                <li>UI/UX</li><li>Frontend Dev</li><li>System Design</li><li>Team Projects</li><li>Academic Excellence</li>
+              </ul>
             </div>
           </div>
 
-          <div class="education-item">
-            <div class="education-content">
-              <div class="education-header">
-                <h3>Senior High School (STEM Strand)</h3>
-                <span class="year">2019 - 2021</span>
-              </div>
-              <p>Tagaytay City Science National High School - Integrated Senior High School</p>
-              <p>High Honor</p>
-            </div>
-          </div>
-
-          <div class="education-item">
-            <div class="education-content">
-              <div class="education-header">
-                <h3>Junior High School</h3>
-                <span class="year">2015 - 2019</span>
-              </div>
-              <p>Tagaytay City Science National High School - Integrated Senior High School</p>
-              <p>Honor</p>
+          <div class="timeline-item">
+            <div class="dot" aria-hidden="true"></div>
+            <div class="content">
+              <h3>Senior High School (STEM Strand)</h3>
+              <span class="when">2019 – 2021</span>
+              <span class="badge">Tagaytay City Science National High School - Integrated Senior High School</span>
+              <span class="badge highlight">High Honor</span>
+              <p>
+                Graduated with strong foundations in mathematics and computer-related courses, sparking my interest in 
+                technology and design. Built critical thinking and problem-solving skills.
+              </p>
+              <ul class="tags">
+                <li>STEM</li><li>Problem Solving</li><li>Critical Thinking</li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
+
+    <!-- Experiences -->
+      <section id="tab-experiences" class="panel" role="tabpanel" aria-labelledby="tab-btn-experiences">
+        <header class="panel-header">
+          <h2>Experiences</h2>
+          <p class="muted">Roles that shaped my craft.</p>
+        </header>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="dot" aria-hidden="true"></div>
+            <div class="content">
+              <h3>UI/UX Designer & Frontend Developer — Lamina Studios, LLC</h3>
+              <span class="when">Aug 2024 – Oct 2024</span>
+              <p>
+                Worked with design tools like Figma and Miro to create layouts and brainstorm ideas. 
+                Learned the fundamentals of color theory, typography, and layout grids. 
+                Applied design concepts to real-world projects, improving aesthetics and usability.
+              </p>
+              <ul class="tags">
+                <li>UI/UX design</li><li>Creativity</li><li>Collaboration</li>
+                <li>Attention to detail</li><li>Design thinking</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="dot" aria-hidden="true"></div>
+            <div class="content">
+              <h3>Municipal Planning and Development Coordinator</h3>
+              <span class="when">Mar 2023 – Sep 2023</span>
+              <p>
+                Collected and encoded accurate resident data from various households. 
+                Maintained confidentiality and provided respectful, professional interaction with local residents. 
+                Demonstrated strong communication, patience, and data handling skills.
+              </p>
+              <ul class="tags">
+                <li>Data collection</li><li>Communication</li><li>Confidentiality</li>
+                <li>Patience</li><li>Accuracy</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Leadership Experience -->
+      <section id="tab-leadership" class="panel" role="tabpanel" aria-labelledby="tab-btn-leadership">
+        <header class="panel-header">
+          <h2>Leadership</h2>
+          <p class="muted">Roles in organizations and class leadership.</p>
+        </header>
+
+        <div class="grid">
+          <article class="card project">
+            <header class="project-head">
+              <h3>Class Secretary</h3>
+              <span class="badge">Polytechnic University of the Philippines</span>
+            </header>
+            <p>
+              Managed and documented class meetings, attendance, and academic records with accuracy and confidentiality. 
+              Facilitated communication between professors and classmates, enhancing coordination and class productivity. 
+              Demonstrated accountability and organization in handling academic concerns and student information.
+            </p>
+            <ul class="tags">
+              <li>2022–2024</li><li>Leadership</li><li>Organization</li>
+              <li>Attention to detail</li><li>Time Management</li>
+              <li>Communication</li><li>Reliability</li><li>Information handling</li>
+            </ul>
+          </article>
+
+          <article class="card project">
+            <header class="project-head">
+              <h3>Class Vice President</h3>
+              <span class="badge">Polytechnic University of the Philippines</span>
+            </header>
+            <p>
+              Assisted the Class President in overseeing class operations and acted as representative when needed. 
+              Initiated and supported student-led projects and activities to promote engagement and collaboration. 
+              Fostered a positive class environment through active listening, conflict resolution, and team support.
+            </p>
+            <ul class="tags">
+              <li>2022–2024</li><li>Leadership</li><li>Organization</li>
+              <li>Attention to detail</li><li>Time Management</li>
+              <li>Communication</li><li>Reliability</li><li>Information handling</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="tab-skills" class="panel" role="tabpanel" aria-labelledby="tab-btn-skills">
+        <header class="panel-header">
+          <h2>Skills</h2>
+          <p class="muted">Core tools, strengths, and proficiencies.</p>
+        </header>
+
+        <div class="grid two">
+          <!-- Communication & Interpersonal -->
+          <div class="card skills-comm">
+            <h3>💬 Communication & Interpersonal</h3>
+            <ul class="bullets">
+              <li>Excellent verbal and written communication</li>
+              <li>Highly adaptable and quick to learn</li>
+              <li>Collaborative team player with a strong sense of responsibility</li>
+              <li>Client-focused mindset and service-oriented approach</li>
+            </ul>
+          </div>
+
+          <!-- Technical Skills -->
+          <div class="card skills-tech">
+            <h3>💻 Technical Skills</h3>
+            <ul class="bullets">
+              <li><span class="highlight">Languages:</span> C, Java, Python, C#</li>
+              <li><span class="highlight">Web Development:</span> HTML, CSS</li>
+              <li><span class="highlight">Frameworks:</span> Laravel</li>
+              <li><span class="highlight">Tools:</span> Brackets, Canva, Figma, Microsoft Office</li>
+            </ul>
+          </div>
+
+          <!-- Soft Skills -->
+          <div class="card skills-soft">
+            <h3>🌟 Soft Skills</h3>
+            <ul class="bullets">
+              <li>Self-motivated</li>
+              <li>Communication</li>
+              <li>Adaptability</li>
+              <li>Strong Sense of Responsibility</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
       <!-- Projects -->
       <section id="tab-projects" class="panel" role="tabpanel" aria-labelledby="tab-btn-projects">
@@ -139,6 +288,27 @@
             <ul class="tags">
               <li>n8n</li><li>Google Sheets</li>
             </ul>
+            <div class="project-actions">
+              <a href="https://github.com/ElishaMagbitang/Daily-Task-Reminder-Automation-Using-n8n" target="_blank" class="github-btn">
+                <svg height="20" viewBox="0 0 16 16" width="20" aria-hidden="true">
+                  <path fill="currentColor" 
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 
+                    6.53 5.47 7.59.4.07.55-.17.55-.38 
+                    0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52
+                    -.01-.53.63-.01 1.08.58 1.23.82.72 
+                    1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 
+                    0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 
+                    0 0 .67-.21 2.2.82a7.56 7.56 0 0 1 2-.27c.68 0 
+                    1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 
+                    1.1.16 1.92.08 2.12.51.56.82 
+                    1.27.82 2.15 0 3.07-1.87 3.75-3.65 
+                    3.95.29.25.54.73.54 1.48 0 1.07-.01 
+                    1.93-.01 2.2 0 .21.15.46.55.38A8.013 
+                    8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+                View on GitHub
+              </a>
+            </div>
           </article>
 
           <article class="card project project-clickfall">
@@ -152,6 +322,27 @@
             <ul class="tags">
               <li>Canva</li><li>HTML</li><li>CSS</li><li>JavaScript</li>
             </ul>
+            <div class="project-actions">
+              <a href="https://github.com/ElishaMagbitang/ClickFall-Pop-Score" target="_blank" class="github-btn">
+                <svg height="20" viewBox="0 0 16 16" width="20" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0..."/>
+                <path fill="currentColor" 
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 
+                    6.53 5.47 7.59.4.07.55-.17.55-.38 
+                    0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52
+                    -.01-.53.63-.01 1.08.58 1.23.82.72 
+                    1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 
+                    0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 
+                    0 0 .67-.21 2.2.82a7.56 7.56 0 0 1 2-.27c.68 0 
+                    1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 
+                    1.1.16 1.92.08 2.12.51.56.82 
+                    1.27.82 2.15 0 3.07-1.87 3.75-3.65 
+                    3.95.29.25.54.73.54 1.48 0 1.07-.01 
+                    1.93-.01 2.2 0 .21.15.46.55.38A8.013 
+                    8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+                View on GitHub
+              </a>
+            </div>
           </article>
 
           <article class="card project project-python">
@@ -160,11 +351,32 @@
               <span class="badge">Developer</span>
             </header>
             <p>
-              Built a collection of Python-based games including Card Match, Guessing Game, Quiz, Snake, and Tic-Tac-Toe.	Designed and implemented a simple dashboard system to navigate and launch individual games. Applied modular coding practices, making it easy to expand and maintain multiple game files.	Utilized Python and Pygame to create interactive gameplay experiences.
+              Built a collection of Python-based games including Card Match, Guessing Game, Quiz, Snake, and Tic-Tac-Toe. Designed and implemented a simple dashboard system to navigate and launch individual games. Applied modular coding practices, making it easy to expand and maintain multiple game files. Utilized Python and Pygame to create interactive gameplay experiences.
             </p>
             <ul class="tags">
               <li>Python</li>
             </ul>
+            <div class="project-actions">
+              <a href="https://github.com/ElishaMagbitang/Mini-Games-using-Python" target="_blank" class="github-btn">
+                <svg height="20" viewBox="0 0 16 16" width="20" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0..."/>
+                <path fill="currentColor" 
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 
+                    6.53 5.47 7.59.4.07.55-.17.55-.38 
+                    0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52
+                    -.01-.53.63-.01 1.08.58 1.23.82.72 
+                    1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 
+                    0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 
+                    0 0 .67-.21 2.2.82a7.56 7.56 0 0 1 2-.27c.68 0 
+                    1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 
+                    1.1.16 1.92.08 2.12.51.56.82 
+                    1.27.82 2.15 0 3.07-1.87 3.75-3.65 
+                    3.95.29.25.54.73.54 1.48 0 1.07-.01 
+                    1.93-.01 2.2 0 .21.15.46.55.38A8.013 
+                    8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+                View on GitHub
+              </a>
+            </div>
           </article>
 
           <article class="card project project-healthapp">
@@ -178,6 +390,27 @@
             <ul class="tags">
               <li>Figma</li><li>Canva</li><li>HTML</li><li>CSS</li><li>JavaScript</li>
             </ul>
+            <div class="project-actions">
+              <a href="https://github.com/ElishaMagbitang/Future-Smart-Pharmacy-System-Web-Version-" target="_blank" class="github-btn">
+                <svg height="20" viewBox="0 0 16 16" width="20" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0..."/>
+                <path fill="currentColor" 
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 
+                    6.53 5.47 7.59.4.07.55-.17.55-.38 
+                    0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52
+                    -.01-.53.63-.01 1.08.58 1.23.82.72 
+                    1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 
+                    0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 
+                    0 0 .67-.21 2.2.82a7.56 7.56 0 0 1 2-.27c.68 0 
+                    1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 
+                    1.1.16 1.92.08 2.12.51.56.82 
+                    1.27.82 2.15 0 3.07-1.87 3.75-3.65 
+                    3.95.29.25.54.73.54 1.48 0 1.07-.01 
+                    1.93-.01 2.2 0 .21.15.46.55.38A8.013 
+                    8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+                View on GitHub
+              </a>
+            </div>
           </article>
 
           <article class="card project project-pos">
@@ -191,6 +424,27 @@
             <ul class="tags">
               <li>Figma</li><li>Canva</li><li>HTML</li><li>CSS</li><li>JavaScript</li>
             </ul>
+            <div class="project-actions">
+              <a href="https://github.com/ElishaMagbitang/Point-of-Sale-System" target="_blank" class="github-btn">
+                <svg height="20" viewBox="0 0 16 16" width="20" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0..."/>
+                <path fill="currentColor" 
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 
+                    6.53 5.47 7.59.4.07.55-.17.55-.38 
+                    0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52
+                    -.01-.53.63-.01 1.08.58 1.23.82.72 
+                    1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 
+                    0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 
+                    0 0 .67-.21 2.2.82a7.56 7.56 0 0 1 2-.27c.68 0 
+                    1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 
+                    1.1.16 1.92.08 2.12.51.56.82 
+                    1.27.82 2.15 0 3.07-1.87 3.75-3.65 
+                    3.95.29.25.54.73.54 1.48 0 1.07-.01 
+                    1.93-.01 2.2 0 .21.15.46.55.38A8.013 
+                    8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+              </svg>
+                View on GitHub
+              </a>
+            </div>
           </article>
 
           <article class="card project project-tracker">
@@ -204,6 +458,27 @@
             <ul class="tags">
               <li>Figma</li><li>Canva</li><li>HTML</li><li>CSS</li><li>JavaScript</li>
             </ul>
+            <div class="project-actions">
+              <a href="https://github.com/ElishaMagbitang/Health-Tracker" target="_blank" class="github-btn">
+                <svg height="20" viewBox="0 0 16 16" width="20" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0..."/>
+                <path fill="currentColor" 
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 
+                    6.53 5.47 7.59.4.07.55-.17.55-.38 
+                    0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52
+                    -.01-.53.63-.01 1.08.58 1.23.82.72 
+                    1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 
+                    0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 
+                    0 0 .67-.21 2.2.82a7.56 7.56 0 0 1 2-.27c.68 0 
+                    1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 
+                    1.1.16 1.92.08 2.12.51.56.82 
+                    1.27.82 2.15 0 3.07-1.87 3.75-3.65 
+                    3.95.29.25.54.73.54 1.48 0 1.07-.01 
+                    1.93-.01 2.2 0 .21.15.46.55.38A8.013 
+                    8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+                View on GitHub
+              </a>
+            </div>
           </article>
 
           <article class="card project project-maverick">
@@ -217,116 +492,31 @@
             <ul class="tags">
               <li>Figma</li><li>Canva</li><li>C#</li>
             </ul>
-          </article>
-
-        </div>
-      </section>
-
-      <!-- Experiences -->
-      <section id="tab-experiences" class="panel" role="tabpanel" aria-labelledby="tab-btn-experiences">
-        <header class="panel-header">
-          <h2>Experiences</h2>
-          <p class="muted">Roles that shaped my craft.</p>
-        </header>
-
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="dot" aria-hidden="true"></div>
-            <div class="content">
-              <h3>UI/UX Designer & Frontend Developer — Lamina Studios, LLC</h3>
-              <span class="when">Aug 2024 – Oct 2024</span>
-              <p>
-                Worked with design tools like Figma and Miro to create layouts and brainstorm ideas. Learned the fundamentals of color theory, typography, and layout grids. Applied design concepts to real-world projects, improving aesthetics and usability.
-              </p>
-              <ul class="tags">
-              <li>UI/UX design</li><li>Creativity</li><li>Collaboration</li><li>Attention to detail</li><li>Design thinking</li>
-            </ul>
+            <div class="project-actions">
+              <a href="https://github.com/ElishaMagbitang/Maverick-Fragrance" target="_blank" class="github-btn">
+                <svg height="20" viewBox="0 0 16 16" width="20" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0..."/>
+                <path fill="currentColor" 
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 
+                    6.53 5.47 7.59.4.07.55-.17.55-.38 
+                    0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52
+                    -.01-.53.63-.01 1.08.58 1.23.82.72 
+                    1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 
+                    0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 
+                    0 0 .67-.21 2.2.82a7.56 7.56 0 0 1 2-.27c.68 0 
+                    1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 
+                    1.1.16 1.92.08 2.12.51.56.82 
+                    1.27.82 2.15 0 3.07-1.87 3.75-3.65 
+                    3.95.29.25.54.73.54 1.48 0 1.07-.01 
+                    1.93-.01 2.2 0 .21.15.46.55.38A8.013 
+                    8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+                View on GitHub
+              </a>
             </div>
-          </div>
+  </article>
+</div>
 
-          <div class="timeline-item">
-            <div class="dot" aria-hidden="true"></div>
-            <div class="content">
-              <h3>Municipal Planning and Development Coordinator</h3>
-              <span class="when"> March 2023 – September 2023</span>
-              <p>
-                Collected and encoded accurate resident data from various households. Maintained confidentiality and provided respectful, professional interaction with local residents. Demonstrated strong communication, patience, and data handling skills.
-              </p>
-              <ul class="tags"> 
-              <li>Data collection</li><li>Communication</li><li>Confidentiality</li><li>Patience</li><li>Accuracy</li>
-              <ul class="tags"></ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Leadership Experience -->
-      <section id="tab-leadership" class="panel" role="tabpanel" aria-labelledby="tab-btn-projects">
-        <header class="panel-header">
-          <h2>Projects</h2>
-          <p class="muted">Leadership</p>
-        </header>
-
-        <div class="grid">
-          <article class="card project">
-            <header class="project-head">
-              <h3>Class Secretary</h3>
-              <span class="badge">Polytechnic University of the Philippines</span>
-            </header>
-            <p>
-              Managed and documented class meetings, attendance, and academic records with accuracy and confidentiality. Facilitated communication between professors and classmates, enhancing coordination and class productivity. Demonstrated accountability and organization in handling academic concerns and student information.
-            </p>
-            <ul class="tags">
-              <li>2022-2024</li><li>Leadership</li><li>Organization</li><li>Attention to detail</li><li>Time Management</li><li>Communication</li><li>Reliability</li><li>Information handling.</li>
-            </ul>
-          </article>
-
-          <article class="card project">
-            <header class="project-head">
-              <h3>Class Vice President</h3>
-              <span class="badge">Polytechnic University of the Philippines</span>
-            </header>
-            <p>
-              Assisted the Class President in overseeing class operations and acted as representative when needed. Initiated and supported student-led projects and activities to promote engagement and collaboration. Fostered a positive class environment through active listening, conflict resolution, and team support.
-            </p>
-            <ul class="tags">
-              <li>202-2024</li><li>Leadership</li><li>Organization</li><li>Attention to detail</li><li>Time Management</li><li>Communication</li><li>Reliability</li><li>Information handling.</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <!-- Skills -->
-      <section id="tab-skills" class="panel" role="tabpanel" aria-labelledby="tab-btn-skills">
-        <header class="panel-header">
-          <h2>Skills</h2>
-          <p class="muted">Core tools and strengths.</p>
-        </header>
-
-        <div class="grid two">
-          <div class="card skills-design">
-            <h3>Design</h3>
-            <ul class="bullets">
-              <li>Figma, Canva</li>
-              <li>Wireframing & Prototyping</li>
-              <li>Design Systems & Style Guides</li>
-              <li>Usability Testing</li>
-            </ul>
-          </div>
-          <div class="card skills-dev">
-            <h3>Development</h3>
-            <ul class="bullets">
-              <li>HTML, CSS, JavaScript</li>
-              <li>Responsive Layouts</li>
-              <li>Accessibility (WCAG)</li>
-              <li>Version Control (Git)</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-    </main>
-  </div>
-
+    
   <script src="./script.js"></script>
 </body>
 </html>
